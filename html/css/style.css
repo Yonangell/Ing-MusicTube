@@ -1,0 +1,129 @@
+:root {
+  --gap: 1rem;
+  --pad: 1rem;
+  --marg: 1rem;
+  --primary: rgb(59, 57, 57);
+  --primari: aliceblue;
+  --color: rgba(9, 119, 215, 0.939);
+  --font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100hv;
+}
+
+.cabecera {
+  background-color: var(--primary);
+  color: var(--color);
+  padding: var(--pad) 0.5rem;
+  border-bottom: 4px solid rgb(203, 200, 200);
+}
+
+.cabe {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: var(--gap);
+  /* padding-right: 0.5rem;   */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: var(--font-weight);
+  /* padding-left: var(--pad);   */
+
+}
+
+.nava-a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: var(--color);
+  /* border: 1px solid red; */
+  border-radius: 0.5rem;
+  padding: 0;  
+}
+
+.nava-a:hover {
+  text-decoration: underline;
+  background-color: rgb(113, 100, 100);
+  color: var(--primari);
+}
+
+li {
+  list-style: none;
+}
+
+.search {
+  padding: 0.5rem 2rem;
+  border: 1px solid rgb(11, 100, 244);
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: #5c5a5a;
+  color: var(--primari);
+  outline: none; 
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(33, 151, 201, 0.874);
+  margin-right: 0 auto; 
+  text-align: left; 
+}
+
+.search:hover {
+    background-color: #3f3f3f;
+  box-shadow: 0 4px 16px rgb(11, 100, 244);
+  
+}
+
+input::placeholder {
+    color: #101010;
+}
+
+.sub-menu {
+ color: var(--color);
+  padding-top:1.5rem;
+  padding-bottom: 0.5rem;  
+
+}
+
+.submenu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+   
+}
+
+.submenu-a {
+    text-decoration: none;
+    color: rgb(244, 243, 247);
+    padding: calc(var(--pad) * 0.5);
+    border: 1.5px solid rgb(244, 234, 234); 
+    border-radius: 0.5rem;
+    background-color: rgb(16, 16, 16);  
+}
+
+.submenu-a:hover {
+background-color: rgb(237, 231, 231);
+  color: var(--primary);
+}
+
+@media only screen and (min-width: 768px) {
+    .cabecera {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+}
+
