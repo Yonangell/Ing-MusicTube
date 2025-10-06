@@ -148,62 +148,76 @@ input::placeholder {
 .p-submenu {
   font-size: 0.7rem;
   font-weight: var(--font-weight);
+  color: var(--primari);
 }
 
 .seccion-conte {
   width: 100%;
 }
 
-.secci-arti, video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 0; 
-}
 
 .secci-arti {
-  background-color: red;
-  padding: var(--pad) 0;
-
-}
-
-.secci-arti video {
-  max-width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: calc(var(--pad) * 1); 
 }
 
 .secci-arti h2 {
-  text-align: left;
+  text-align: center;
   padding-bottom: var(--pad);
   font-size: 2.5rem;
   font-weight: var(--font-weight);
+  overflow: hidden;
 }
-
 
 .article {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
-  padding: var(--pad);
+  padding: var(--pad); 
 }
 
 .video-arti {
   background-color: white;
-  border: 1px solid #eee;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  border: 2px solid #0a0a0a;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgb(20, 20, 20);
+  max-width: 350px;
 }
 
-.article video {
-  max-width: 100%;
+video {
+  border-radius: 1rem;
+  border: 2px solid  #0a0a0a;
+}
+
+.video-arti video {
+  width: 100%;
   height: auto;
+}
+
+.video-arti source {
+ width: 100%;
+  height: auto;
+} 
+
+
+.secci-arti {
+  background-color: rgb(195, 46, 46);
+  padding: var(--pad) 0;
+  gap: var(--gap);
   
 }
 
 .video-arti div {
   padding: var(--pad);
+}
+
+.video-arti h3,
+.video-arti p,
+.video-arti h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .pie {
@@ -232,16 +246,11 @@ input::placeholder {
   grid-template-rows: auto  1fr  auto;
 }
   
+.article {
+  margin: 0 auto;
+}
 
-  /*
-  .sidebar {
-    position: fixed;
-    left: 0;
-    /* width: 100%; */
-    /* padding: var(--pad);  
-    border-right: 1px solid #eee;
-    z-index: 10;
-  }*/
+
 
   .cabe {
     flex-direction: row;
