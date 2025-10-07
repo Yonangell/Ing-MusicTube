@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Open Sans' sans-serif;
+  font-family: "Open Sans" sans-serif;
 }
 
 a {
@@ -27,13 +27,12 @@ a {
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-
 }
 
 .cabecera {
   background-color: var(--primary);
   color: var(--color);
-  padding-right: 0 ;
+  padding-right: 0;
   border-bottom: 1px solid rgb(203, 200, 200);
 }
 
@@ -44,17 +43,14 @@ a {
   justify-content: space-between;
   /* gap: 1rem;  */
   /* margin:0;  */
-   /* padding: 0 ;  */
+  /* padding: 0 ;  */
 }
-
-
-
 
 h2 {
   color: white;
   font-size: 1.8rem;
   font-weight: var(--font-weight);
-  font-family: 'Roboto' sans-serif;
+  font-family: "Roboto" sans-serif;
 }
 
 .ico-menu {
@@ -62,8 +58,6 @@ h2 {
   /* gap: var(--gap); */
   font-weight: bolder;
 }
-
-
 
 .ico-youtube {
   /* margin-left: 1rem; */
@@ -76,9 +70,8 @@ h2 {
 .sub-menu {
   background-color: var(--primary);
   color: var(--color);
-  padding: 0.6rem 0.6rem; 
+  padding: 0.6rem 0.6rem;
   gap: var(--gap);
-  
 }
 
 .submenu-nav {
@@ -86,16 +79,15 @@ h2 {
   /* flex-direction: row; */
   justify-content: center;
   align-items: center;
-  gap: calc(var(--gap) *2.5);   
+  gap: calc(var(--gap) * 2.5);
   margin: 0.5rem auto;
-  
 }
 
 .submenu-a {
   text-decoration: none;
   color: rgb(247, 247, 252);
   padding: calc(var(--pad) * 0.4);
-  margin: 0.4rem; 
+  margin: 0.4rem;
   border: 0px solid rgb(244, 234, 234);
   border-radius: 0.5rem;
   background-color: rgb(45, 45, 45);
@@ -104,10 +96,9 @@ h2 {
 .nav {
   display: flex;
   align-items: center;
-  padding: 0.5rem; 
+  padding: 0.5rem;
   gap: var(--gap);
 }
-
 
 .nava-a {
   padding-right: 0;
@@ -161,7 +152,6 @@ input::placeholder {
   margin-left: 5.6rem;
 }
 
-
 .submenu-a:hover {
   background-color: rgb(237, 231, 231);
   color: var(--primary);
@@ -211,7 +201,7 @@ input::placeholder {
   padding: calc(var(--pad) * 1);
 }
 
-.secci-arti h2 {
+.secci-arti {
   text-align: center;
   padding-bottom: var(--pad);
   font-size: 2.5rem;
@@ -273,25 +263,6 @@ video {
   width: 100%;
   height: auto;
 }
-
-.div-pie {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.25rem 1rem;
-}
-
-.ima-pie {
-  width: 30%;
-  border-radius: 100%;
-}
-
-.ima-pie {
-  padding: 0 auto;
-  margin: 0 0;
-}
-
-
 
 @media only screen and (min-width: 768px) {
   .cabecera {
