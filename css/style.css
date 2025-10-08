@@ -31,7 +31,7 @@ body {
     color: #fff;
 }*/
 .cabecera {
-  background-color: #000;
+  background-color: #0f0f0f;
   padding: 0.6rem;
 }
 
@@ -191,9 +191,13 @@ li {
 
 .sidebar {
   padding: 1.5rem;
-  background-color: #000;
+  background-color: #0f0f0f;
   border-bottom: 1px solid #eee;
   display: none;
+  color: #fff;
+}
+
+hr {
   color: #fff;
 }
 
@@ -218,7 +222,7 @@ li {
 }
 
 .secci-nav {
-  background-color: #000;
+  background-color: #0f0f0f;
   padding: var(--pad);
   text-wrap: nowrap; 
   /* font-size: small; */
@@ -246,7 +250,7 @@ li {
 }
 
 .secci-arti {
-  background-color: #000;
+  background-color: #0f0f0f;
   /* padding: 0.5rem 0.5rem; */
 }
 
