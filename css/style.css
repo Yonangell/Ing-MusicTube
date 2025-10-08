@@ -21,11 +21,12 @@ body {
 .cabecera {
   background-color: #000;
   padding: 0.6rem;
+
 }
 
 .contendor-principal {
   width: 100%;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 h2 {
@@ -89,14 +90,13 @@ li {
 
 .menu-btn:hover {
   background-color: rgb(104, 104, 104);
-  
 }
 
 .menu-btn {
   display: flex;
   justify-content: center;
   /* border: 1px solid rgb(127, 125, 125);   */
-  padding: 0.1rem 0.1rem; 
+  padding: 0.1rem 0.1rem;
   background-color: #000;
   border-radius: 2rem;
 }
@@ -180,7 +180,6 @@ li {
   border-bottom: 1px solid #eee;
   display: none;
   color: #fff;
-  
 }
 
 .sidebar-ul {
@@ -203,7 +202,6 @@ li {
 .secci-nav {
   background-color: #000;
   padding: var(--pad);
-  
 }
 
 .nav-secci {
@@ -227,7 +225,6 @@ li {
 .secci-arti {
   background-color: #000;
   padding: 0.5rem 0;
-
 }
 
 .secci-arti {
@@ -243,36 +240,30 @@ li {
   font-weight: var(--font-weight);
 }
 
-
 .article {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: var(--gap);
   padding: var(--pad);
 }
 
 .video-arti {
-  background-color: transparent;
-  /* border: 1px solid #000; */
+  border: 1px solid #000; 
   border-radius: 0.8rem;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 350px;
-  margin: 3rem;
-  padding: 0;
-  border: 0;
-  cursor: pointer; 
+  cursor: pointer;
 }
-
 
 .video-arti video {
   max-width: 100%;
-  height: auto;   
+  height: auto;
+  /* object-fit: cover; */
   /* cursor:pointer; */
 }
 
-.video-arti 
-.div-article {
+.video-arti .div-article {
   padding: 0.5rem;
 }
 
@@ -292,30 +283,28 @@ li {
   text-align: left;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 1.2rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #fff;
+  line-height: 1.8rem;
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
 }
 
-
 @media only screen and (min-width: 768px) {
+  .contendor-principal {
+    min-height: 100vh;
+    display: grid; 
+    grid-template-columns: auto 1fr auto;
+    /* cursor: pointer; */
+  }
 
- .contendor-principal {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  cursor: pointer;
- }
-
-  .header {
+  .cabecera {
     position: sticky;
     top: 0;
     z-index: 10;
   }
 
-.cabe {
+  .cabe {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -332,13 +321,12 @@ li {
   .sidebar {
     display: block;
     height: 100vh;
-
   }
 
-.sidebar-ul {
+  .sidebar-ul {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--gap); 
+    gap: var(--gap);
     /* padding: 0;  */
   }
 
@@ -348,14 +336,14 @@ li {
     align-items: center;
   }
 
-.nav-secci {
-  flex-direction: row;
-  align-items: center;
-}
+  .nav-secci {
+    flex-direction: row;
+    align-items: center;
+  }
 
-
-.article {
+  .article {
     width: 100%;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -363,6 +351,5 @@ li {
     margin: 0 auto;
   }
 
-
- 
+  
 }
