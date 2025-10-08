@@ -25,6 +25,7 @@ body {
 
 .contendor-principal {
   width: 100%;
+  cursor: pointer;
 }
 
 h2 {
@@ -223,7 +224,91 @@ li {
   background-color: #3e3d3d;
 }
 
+.secci-arti {
+  background-color: #000;
+  padding: 0.5rem 0;
+
+}
+
+.secci-arti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-right: 0;  */
+}
+
+.secci-arti {
+  text-align: left;
+  padding-bottom: var(--pad);
+  font-weight: var(--font-weight);
+}
+
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  padding: var(--pad);
+}
+
+.video-arti {
+  background-color: transparent;
+  /* border: 1px solid #000; */
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin: 3rem;
+  padding: 0;
+  border: 0;
+  cursor: pointer; 
+}
+
+
+.video-arti video {
+  max-width: 100%;
+  height: auto;   
+  /* cursor:pointer; */
+}
+
+.video-arti 
+.div-article {
+  padding: 0.5rem;
+}
+
+.video-arti h4,
+.video-arti p {
+  text-align: left;
+  /* margin-bottom: 0.4rem; */
+  color: #aaaaaa;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  white-space: normal;
+}
+
+.video-arti h3 {
+  text-align: left;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+
 @media only screen and (min-width: 768px) {
+
+ .contendor-principal {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  cursor: pointer;
+ }
+
   .header {
     position: sticky;
     top: 0;
@@ -267,6 +352,17 @@ li {
   flex-direction: row;
   align-items: center;
 }
+
+
+.article {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-arti {
+    margin: 0 auto;
+  }
+
 
  
 }
