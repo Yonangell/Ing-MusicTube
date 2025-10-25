@@ -46,16 +46,6 @@ h2 {
   margin-right: 1rem;
 }
 
-.div-h4 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 1rem;
-  line-height: 2rem;
-  font-weight: 400;
-}
-
 .menu-btn {
   width: 38px;
   height: 38px;
@@ -205,32 +195,16 @@ input::placeholder {
   cursor: pointer;
 }
 
-.sidebar {
-  padding: 0rem;
-  background-color: #0f0f0f;
+.sidebar1 {
   display: none;
-  color: #fff;
 }
 
 .sidebar-principal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--gap);
-  padding: 1rem;
+  display: none;
 }
 
-.vid {
-  align-items: center;
-  text-align: center;
-  gap: var(--gap);
-  cursor: pointer;
-}
-
-hr {
-  color: #fff;
-  width: 100%;
-  margin: 20px auto;
+.div-h4 {
+  display: none;
 }
 
 .div-section {
@@ -270,7 +244,7 @@ hr {
 
 .submen-a {
   height: 32px;
-  /* min-width: 5px;   Esta propiedad estaba haciendo que el submenu se me 
+  /* min-width: 5px;   Esta propiedad estaba haciendo que el submenu se me
   ropiera */
   padding: 0.5rem 0.8rem;
   align-items: center;
@@ -341,11 +315,19 @@ hr {
   color: #fff;
 }
 
+.main {
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) {
   .cabecera {
     position: sticky;
     top: 0;
     z-index: 10;
+  }
+
+  hr {
+    display: none;
   }
 
   .cabe {
@@ -414,37 +396,55 @@ hr {
     height: 12px;
   }
 
-  .main {
-    display: flex;
-  }
-
   .nav {
     flex-direction: row;
     align-items: center;
   }
-/*
-  .nav-secci {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }*/
 
   .sidebar {
-    display: flex;
-    min-height: 100%;
+    display: block;
+    padding: 0rem;
+    background-color: #0f0f0f;
+    color: #fff;
+    
   }
 
   .sidebar-principal {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    padding-top: 1.5rem;
   }
 
   .vid {
+    display: none;
+  }
+
+  #id-inicio {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: baseline;
     align-items: center;
+    cursor: pointer;
+  }
+
+  #inicio-h4 {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 10px;
+    line-height: 2rem;
+    font-weight: 400;
+    padding-left: 0.2rem;
+  }
+
+  .img-inicio {
+    width: 32px;
+    height: 32px;
   }
 
   .nav-secci {
@@ -460,6 +460,73 @@ hr {
 
   .video-arti {
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #id-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #inicio-h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  .sidebar {
+    display: flex;
+    padding: 0rem;
+    background-color: #0f0f0f;
+    color: #fff;
+    
+  }
+
+  .sidebar-principal {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--gap);
+    padding: 1rem;
+    
+  }
+
+  .vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+  }
+
+  .div-h4 {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  hr {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    margin: 20px auto;
   }
 }
 
@@ -483,16 +550,6 @@ hr {
     flex-wrap: nowrap;
     align-items: flex-end;
   }
-
-/*
-  .sidebar-principal {
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: nowrap;
-    align-items: start;
-    justify-content: space-between;
-    visibility: visible;
-  }*/
 
   .article {
     width: 100%;
