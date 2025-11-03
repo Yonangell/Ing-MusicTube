@@ -19,18 +19,11 @@ body {
   font-family: "Open Sans" sans-serif;
 }
 
-.contendor-principal {
-  display: grid; 
-  grid-template-rows: auto auto auto; 
-  height: 100%;
-  width: 100%;
-}
-
 .cabecera {
   background-color: var(--primary);
   position: sticky;
-    top: 0;
-    z-index: 10;
+  top: 0;
+  z-index: 10;
 }
 
 .cabe {
@@ -169,10 +162,6 @@ li {
   cursor: pointer;
 }
 
-.sidebar1 {
-  display: none;
-}
-
 .sidebar-principal {
   display: none;
 }
@@ -187,30 +176,30 @@ li {
   display: inline-block;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
-.secci-nav {
+/* .secci-nav {
   text-wrap: nowrap;
   white-space: nowrap;
   margin: 0 1.2rem;  
-  
-}
+  overflow: auto;
+  scrollbar-width: none;
+} */
 
 .nav-secci {
-  padding: 0.8rem 0;
-  min-width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  overflow-x: auto;
-  white-space: nowrap;
-  gap: 0.6rem;
-  align-items: center;
   position: sticky;
   top: 0;
   bottom: 0;
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding: 0.8rem 1.2rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .submen-a {
@@ -222,13 +211,10 @@ li {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .submen-a {
-  height: 32px;
-  /* min-width: 5px;   Esta propiedad estaba haciendo que el submenu se me
-  ropiera */
   padding: 0.5rem 0.8rem;
   align-items: center;
   position: relative;
@@ -260,7 +246,6 @@ li {
 .video-arti {
   border: 1px solid #000;
   border-radius: 0.8rem;
-  overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 350px;
   cursor: pointer;
@@ -305,7 +290,6 @@ li {
 @media only screen and (min-width: 768px) {
   .cabecera {
     width: 100%;
-    
   }
 
   hr {
@@ -318,7 +302,6 @@ li {
     justify-content: center;
     align-items: center;
     padding: 0.4rem 0.8rem;
-    
   }
 
   .div-search {
@@ -379,13 +362,11 @@ li {
     height: 12px;
   }
 
-  
   .sidebar {
     display: block;
     padding: 0rem;
     background-color: #0f0f0f;
-    color: #fff;   
-    
+    color: #fff;
   }
 
   .sidebar-principal {
@@ -411,7 +392,6 @@ li {
 
   #inicio-h4 {
     display: flex;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: "Roboto", "Arial", sans-serif;
@@ -424,11 +404,6 @@ li {
   .img-inicio {
     width: 32px;
     height: 32px;
-  }
-
-  .nav-secci {
-    flex-direction: row;
-    align-items: center;
   }
 
   .article {
@@ -470,20 +445,18 @@ li {
     outline: none;
     border: 1px solid rgb(12, 110, 230);
   }
- 
 
-.secci-arti {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .secci-arti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.secci-arti {
-  padding-bottom: var(--pad);
-  font-weight: var(--font-weight);
-  background-color: var(--primary);
-}
-
+  .secci-arti {
+    padding-bottom: var(--pad);
+    font-weight: var(--font-weight);
+    background-color: var(--primary);
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -505,7 +478,7 @@ li {
     align-items: center;
     padding: 0.4rem 0.8rem;
   }
-  
+
   #id-inicio {
     display: flex;
     flex-direction: row;
@@ -519,7 +492,6 @@ li {
     align-items: center;
     cursor: pointer;
     gap: 1rem;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: "Roboto", "Arial", sans-serif;
@@ -553,7 +525,6 @@ li {
 
   .div-h4 {
     display: flex;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: "Roboto", "Arial", sans-serif;
@@ -608,7 +579,6 @@ li {
   .video-arti {
     margin: 0 auto;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
